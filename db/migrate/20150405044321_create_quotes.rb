@@ -6,6 +6,6 @@ class CreateQuotes < ActiveRecord::Migration
       t.string :author
 
       t.timestamps
-   # end
+    end
   end
 end
