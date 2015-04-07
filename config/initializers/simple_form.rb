@@ -1,6 +1,5 @@
 # Use this setup block to configure all options available in SimpleForm.
 SimpleForm.setup do |config|
-  #styles forms using simpleform gem rather than Bootstrap 3
   config.input_class = "form-control"
   # Wrappers are used by the form builder to generate a
   # complete input. You can remove any component from the
