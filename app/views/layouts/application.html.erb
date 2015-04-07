@@ -9,16 +9,26 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-			LOGO
+			<%# LOGO %>
+			<div class="circle">
+  				<br />
+  				Zen
+ 				<br />
+  				hippie
+  				<br />
+  				stuff!!
+			</div>
 		</div>
-		<div class="col-xs-4">
+		
+		<div class="col-xs-4 slogan">
 			Splurting out unsolicited advice about entrepreneurship since 2014
 		</div>	
-		<div class="col-xs-5">
+		<div class="col-xs-5 links">
 			<%= link_to 'Contribute a quote', '#' %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
+	<hr />
 <%# clearing br tag, clears body text out of bootstrap columns in the top navigation bar %>
 	<br class="clear" />
 <%= yield %>
