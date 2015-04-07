@@ -21,7 +21,7 @@
 		</div>
 		
 		<div class="col-xs-4 slogan">
-			Splurting out unsolicited advice about entrepreneurship since 2014
+			Splurting out unsolicited advice about interpersonal interaction since 2015
 		</div>	
 		<div class="col-xs-5 links">
 			<%= link_to 'Contribute a quote', '#' %>
@@ -31,7 +31,28 @@
 	<hr />
 <%# clearing br tag, clears body text out of bootstrap columns in the top navigation bar %>
 	<br class="clear" />
-<%= yield %>
+
+<div class="container">
+	<%= yield %>
+</div>
+
+
+<div class="footer">
+	<div class="container">
+		<div class="col-xs-6">
+			<%= link_to "This isn't enough, I need more.", "#", :class => 'next-quote' %>
+		</div>
+
+		<div class="col-xs-6 footer-blurb">
+			Proudly hacked in San Francisco, CA by Melanie.
+			Want to build your own Splurty web app? <a href="http://thefirehoseproject.com">Learn how to code here</a>
+		</div>
+	</div>
+</div>
+		<p class="text-muted">Ok, what else is in here?</p>
+
+	</div>
+
 
 </body>
 </html>
