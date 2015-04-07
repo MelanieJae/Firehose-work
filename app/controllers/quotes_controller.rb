@@ -2,7 +2,8 @@ class QuotesController < ApplicationController
 	def index
 		@quote = Quote.order("RANDOM()").first
 # @quote is variable, first quote in database Quote
-# is now the string-type value of @quote		
+# is now the string-type value of @quote	
+		
 	end	
 
 	def new
@@ -10,7 +11,10 @@ class QuotesController < ApplicationController
 	end
 
 	def create
-		Quote.create(quote_params)
+		@quote = Quote.create(quote_params)
+		if @quote.invalid?
+			flash[:error] = '<strong>Could not save</strong> The data you entered is invalid.'	
+		end	
 		redirect_to root_path
 	end
 
