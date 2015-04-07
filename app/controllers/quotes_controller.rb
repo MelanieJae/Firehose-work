@@ -4,4 +4,8 @@ class QuotesController < ApplicationController
 # @quote is variable, first quote in database Quote
 # is now the string-type value of @quote		
 	end	
+
+	def new
+		@quote = Quote.new
+	end
 end

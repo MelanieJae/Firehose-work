@@ -9,6 +9,11 @@ gem 'pg'
 # add bootstrap sass gem
 gem 'bootstrap-sass', '~> 3.3.4'
 
+#add simpleform gem to create quote input
+#form on page that routes from 
+# "Contribute" link on front page.
+gem 'simple_form'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
