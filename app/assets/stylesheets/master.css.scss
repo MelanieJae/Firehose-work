@@ -66,14 +66,14 @@ h2 {
 	
 }
 
-/* .container {
-  width: auto;
-  max-width: 680px;
-  padding: 0 15px;
+h3 {
+	font-size:12px;
 }
-.container .text-muted {
-  margin: 20px 0;
-} */
+
+h3 span{
+	color: #dddddd;
+	font-size:12px;
+}
 
 .next-quote {
 	color:#038056;
@@ -93,4 +93,19 @@ h2 {
 
 .about {
 	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+
+}
+
+.modal {
+	font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+}
+::selection {
+	background-color: #038056;
+
+}
+
+@media (max-width: 750px) {
+	.footer-blurb {
+		text-align: left;
+	}
 }

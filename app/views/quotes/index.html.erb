@@ -1,7 +1,15 @@
+<h3>
+	<span>SPLURTY /No. <%= @quote.id %></span>
+	Here's the <u>best unsolicited self-improvement advice</u> you can get!
+</h3>
+
+
 <h1><%= @quote.saying %></h1>
-<h2>- <%= @quote.author %></h2>
-<% if false %>
-lines 1 and 2 pull the value of @quote, which is equal to Quote.first, the first entry created and pushed to the database aka what I put there from the rails console with the Quote.create command) and then make the ":saying" part of the quote that I input the t.string :saying and the "author" part of the quote I put the t.string :author, spitting out the :saying string of quote.create on the first line as a first HTML heading and :author string on the second line as a second HTML heading.
-<% end %>
+<h2 class="pull-right">- <%= @quote.author %></h2>
+
+<br class="clear" />
+<br />
+<br />
+<br />
 
 
