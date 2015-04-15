@@ -108,4 +108,9 @@ h3 span{
 	.footer-blurb {
 		text-align: left;
 	}
+
+@viewport {
+	zoom: 1.0;
+	width: extend-to-zoom;
+	}
 }
