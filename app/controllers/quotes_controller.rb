@@ -9,7 +9,10 @@ class QuotesController < ApplicationController
 	end
  	
  	def show
- 		@quote = Quote.find(params[:id])
+ 		@quote = Quote.where(:id => params[:id]).first
+ 		if @quote.blank?
+ 			render :text => "Not found", :status => :not_found
+ 		end
  	end
 
 	def create
