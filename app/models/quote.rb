@@ -7,14 +7,15 @@ class Quote < ActiveRecord::Base
 #ask why this doesn't work
 #	def author_initials
 #		first_initial = self.author.to_s.chr
-#		last_initial = self.author.split().pop
+#		last_initial = self.author.split().pop.to_s.chr
 #		puts first initial,last_initial
 #			end
+# or...
 # #		firstname = splitname[0]
 # 		lastname = splitname.pop
 # 		@first_initial = firstname.to_s.chr
 # 		@last_initial = lastname.to_s.chr
 # 		puts @first_initial.concat(@last_initial)
-	end
+#	end
 
 end
