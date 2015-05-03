@@ -2,10 +2,15 @@ class QuotesController < ApplicationController
 	def index
 		@quote = Quote.order("RANDOM()").first
 # @quote is variable, first quote in database Quote
-# is now the string-type value of @quote	
-		
-	end	
-
+# is now the string-type value of @quote		
+	end
+	
+	def new
+	end
+ 	
+ 	def show
+ 		@quote = Quote.find(params[:id])
+ 	end
 
 	def create
 		@quote = Quote.create(quote_params)
@@ -17,7 +22,7 @@ class QuotesController < ApplicationController
 
 	def about
 	end	
-	
+
 	private
 
 	def quote_params

@@ -1,0 +1,14 @@
+<h4>For those with longer attention spans, here's a quote that sticks around as long as you choose to stay on this page:</h4>
+
+<br />
+<br />
+<br />
+<h1>"<%= @quote.saying %>"</h1>
+<h2 class="pull-right">- <%= @quote.author %></h2>
+<br class="clear" />
+
+<div class="footer">
+	<div class="pull-left">
+		<%= link_to "I've stared long enough. Next...", root_path, :class => 'next-quote' %>
+	</div>
+</div>
